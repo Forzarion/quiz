@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>quiz</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220805124209">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="page__form">
+				<form action="#" id="form" class="form">
+					<h1 class="form__title">Отправда данных на почту</h1>
+					<div class="form__wrapper">
+						<div class="form__block _active">
+							<div class="form__item">
+								<label for="formName" class="form__label">Имя*:</label>
+								<input id="formName" type="text" name="name" class="form__input _req">
+							</div>
+							<div class="form__item">
+								<label for="formEmail" class="form__label">E-mail*:</label>
+								<input id="formEmail" type="text" name="email" class="form__input _req _email">
+							</div>
+							<div class="form__buttons">
+								<a href="" class="form__next">Next</a>
+							</div>
+						</div>
+						<div class="form__block">
+							<div class="form__item">
+								<div class="form__label">Левша или правша?</div>
+								<div class="options">
+									<div class="options__item">
+										<input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+										<label for="formRightHanded" class="options__label"><span>Правша</span></label>
+									</div>
+									<div class="options__item">
+										<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+										<label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form__item">
+								<label for="formMessage" class="form__label">Сообщение:</label>
+								<textarea name="message" id="formMessage" class="form__input"></textarea>
+							</div>
+							<div class="form__buttons">
+								<a href="" class="form__prev">Previous</a>
+								<a href="" class="form__next">Next</a>
+							</div>
+						</div>
+						<div class="form__block">
+							<div class="form__item">
+								<div class="form__label">Возраст:</div>
+								<select name="age" class="form__select">
+									<option value="от 18 до 25" selected>Молодой</option>
+									<option value="от 25 до 45">Старый</option>
+									<option value="от 45">Супер стар</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<div class="checkbox">
+									<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+									<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных
+											данных в соответствии с <a href="">Условиями</a>*</span></label>
+								</div>
+							</div>
+							<div class="form__buttons">
+								<a href="" class="form__prev">Previous</a>
+							</div>
+							<button type="submit" class="form__button">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20220805124209"></script>
+</body>
+
+</html>
+<!-- <form action="#" id="form" class="form">
+   <h1 class="form__title">Отправда данных на почту</h1>
+   <div class="form__wrapper">
+      <div class="form__block _active">
+         <div class="form__item">
+            <label for="formName" class="form__label">Имя*:</label>
+            <input id="formName" type="text" name="name" class="form__input _req">
+         </div>
+         <div class="form__item">
+            <label for="formEmail" class="form__label">E-mail*:</label>
+            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+         </div>
+         <div class="form__buttons">
+            <a href="" class="form__next">Next</a>
+         </div>
+      </div>
+      <div class="form__block">
+         <div class="form__item">
+            <div class="form__label">Левша или правша?</div>
+            <div class="options">
+               <div class="options__item">
+                  <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+                  <label for="formRightHanded" class="options__label"><span>Правша</span></label>
+               </div>
+               <div class="options__item">
+                  <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+                  <label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+               </div>
+            </div>
+         </div>
+         <div class="form__item">
+            <label for="formMessage" class="form__label">Сообщение:</label>
+            <textarea name="message" id="formMessage" class="form__input"></textarea>
+         </div>
+         <div class="form__buttons">
+            <a href="" class="form__prev">Previous</a>
+            <a href="" class="form__next">Next</a>
+         </div>
+      </div>
+      <div class="form__block">
+         <div class="form__item">
+            <div class="form__label">Возраст:</div>
+            <select name="age" class="form__select">
+               <option value="от 18 до 25" selected>Молодой</option>
+               <option value="от 25 до 45">Старый</option>
+               <option value="от 45">Супер стар</option>
+            </select>
+         </div>
+         <div class="form__item">
+            <div class="checkbox">
+               <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+               <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных
+                     данных в соответствии с <a href="">Условиями</a>*</span></label>
+            </div>
+         </div>
+         <div class="form__buttons">
+            <a href="" class="form__prev">Previous</a>
+         </div>
+         <button type="submit" class="form__button">Отправить</button>
+      </div>
+   </div>
+</form> -->
